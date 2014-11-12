@@ -103,7 +103,8 @@ def load(shelf_path=None):
                 # Defaults and basic setup.
                 button.setdefault('width', 34)
                 button.setdefault('height', 34)
-            
+                button.setdefault('image1', 'pythonFamily.png')
+                
                 # Extract keys to remember buttons.
                 uuids = [button.get('entrypoint'), button.pop('uuid', None)]
                 
